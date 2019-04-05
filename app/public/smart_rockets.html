@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script src="p5/p5.min.js"></script>
+    <script src="p5/addons/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="smartRockets/javascript/DNA.js"></script>
+    <script language="javascript" type="text/javascript" src="smartRockets/javascript/Population.js"></script>
+    <script language="javascript" type="text/javascript" src="smartRockets/javascript/Rocket.js"></script>
+    <script language="javascript" type="text/javascript" src="smartRockets/javascript/sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="smartRockets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Smart Rockets</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="smart_rockets.html">Smart Rockets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mnist_nn.html">MNIST Identifier</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id ="jumbocontainer" class="jumbotron">
+        <div id="canvas"></div>     
+    </div>
+
+    <form class="form-inline" id="inputs">
+    
+        <label for="populationSize">Population Size: </label>
+        <input type="number" class="form-control" placeholder=200 class="input-bar">
+    
+        <label for="mutationRate">Mutation Rate: </label>
+        <input type="number" class="form-control" placeholder=0.001 class="input-bar">
+        
+        <label for="frames">Number of Frames: </label>
+        <input type="number" class="form-control" placeholder=100 class="input-bar">
+        <div class="form-group"> 
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit"  id="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+      </form>
+
+    <p id="info">
+        Frame Count: <span id="framecount"></span></br>
+        </br>
+        Generation Count: <span id="generationcount"></span></br>
+    </p>
+
+</body>
+
+</html>

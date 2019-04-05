@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+}
+
+
+#jumbocontainer{
+  text-align:center;
+  margin: 0;
+  padding: 0;
+}
+#canvas {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+}
+#inputs {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 5px;
+}
+
+#inputs input {
+  width: 75px;
+  padding: 5px;
+}
+
+#inputs label {
+  padding: 5px;
+}
+#info {
+  justify-content: center;
+  margin: auto;
+  width: 100%
+}

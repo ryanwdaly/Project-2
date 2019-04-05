@@ -15,7 +15,14 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/view.html"));
+    res.sendFile(path.join(__dirname, "../public/main.html"));
+  });
+  app.get("/mnist-nn", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/mnist_nn.html"));
+  });
+
+  app.get("/smart-rockets", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/smart_rockets.html"));
   });
 
   // // add route loads the add.html page, where users can enter new books to the db

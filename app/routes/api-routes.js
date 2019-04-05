@@ -4,10 +4,9 @@
 
 // Dependencies
 // =============================================================
-var TrainingData = require("../models/TrainingData.js");
-var mnist = require("mnist");
-var trainingSet = mnist.training;
-var testSet = mnist.test;
+var mnist = require("mnist")
+
+
 
 // Routes
 // =============================================================
@@ -17,12 +16,27 @@ module.exports = function(app) {
 // api/mnist/test
 // api/minst/input
 
-  // Get all books
-  app.get("/api/training", function(req, res) {
-    TrainingData.findAll({}).then(function(results) {
+  // Add a book
+
+
+
+  app.post("/api/test-data", function(req, res) {
+    console.log("Test Data:");
+    console.log(req.body);
+    TrainingData.create({
+      input: req.body.title,
+      output: req.body.author,
+    }).then(function(results) {
       res.json(results);
     });
   });
+
+  // Get all books
+  // app.get("/api/training", function(req, res) {
+  //   TrainingData.findAll({}).then(function(results) {
+  //     res.json(results);
+  //   });
+  // });
 
   // // Get a specific TrainingSession
   // app.get("/api/:TrainingSession", function(req, res) {

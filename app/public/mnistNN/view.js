@@ -1,13 +1,18 @@
 
+ $.post("/api/training-data", null)
+ // On success, run the following code
+ .then(function(data) {
+   // Log the data we found
+   console.log(data);
+ });
 
 
-
-$.get("/api/test", function(data) {
-
+$.get("/api/training-data", function(data) {
+  console.log("hello")
       // Log the data to the console
       console.log(data);
       // Call our renderBooks function to add our books to the page
-      renderBooks(data);
+
   
     });
 
