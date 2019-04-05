@@ -7,7 +7,7 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js");
 
 // Creates a "Book" model that matches up with DB
-var TrainingData = sequelize.define("training_data", {
+var SmartRocketData = sequelize.define("smart_rocket_data", {
   input: Sequelize.STRING,
   output: Sequelize.STRING,
 });
