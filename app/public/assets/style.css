@@ -1,0 +1,53 @@
+body {
+
+    background: url("images/background.jpeg");
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   margin: 0px;
+     min-height: 100%;
+     width: 100%;
+  }
+  html {
+     margin: 0px;
+     height: 100%;
+     width: 100%;
+  }
+
+  #main-container {
+   position: relative;
+
+   top:  18%;
+   /* width: 100%; */
+   text-align: center;
+   opacity: 0.75;
+   width: 900px;
+}
+
+.center-text {
+   background-color: #111;
+   color: #fff;
+   padding: 18px;
+   font-size: 28px;
+   letter-spacing: 10px;
+  
+     /* font-family: Arial, Helvetica, sans-serif; */
+}
+#ryanwdaly {
+ padding-top: 25px;
+ margin: auto;
+ padding-bottom: 0px;
+ width: 400px;
+ text-align: center;
+ 
+
+}
+#description {
+ padding-top: 25px;
+ padding-bottom: 25px;
+ font-size: 18px;
+ letter-spacing: 1px;
+}
