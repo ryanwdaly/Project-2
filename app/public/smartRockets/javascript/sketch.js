@@ -42,15 +42,15 @@
         barriery = (height - barrierh) / 2;
 
         //input popsize
-        inputPop = createInput().attribute('placeholder', 200);
+        inputPop = createInput().attribute('placeholder', "Population");
         inputPop.position(5, 65)
         
         //input mutationRate
-        inputMut = createInput().attribute('placeholder', 0.001);
+        inputMut = createInput().attribute('placeholder', "Mutation Rate");
         inputMut.position(5, 95);
 
         //input lifespan
-        inputLife = createInput().attribute('placeholder', 100);
+        inputLife = createInput().attribute('placeholder', "Number of Frames");
         inputLife.position(5, 125);
 
         //submitbtn
