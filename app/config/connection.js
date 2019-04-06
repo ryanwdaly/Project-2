@@ -9,9 +9,9 @@ var sequelize;
 var connection;
 // Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
 if(process.env.JAWSDB_URL) {
-  connection = new Sequelize(process.env.JAWSDB_URL);
-  connection.connect();
-  module.exports = connection;
+  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  sequelize.connect();
+  module.exports = sequelize;
 } else {
   sequelize = new Sequelize("algorithm_db", "root", "rootroot", {
     host: "localhost",
