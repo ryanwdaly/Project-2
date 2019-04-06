@@ -28,7 +28,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/a_star_is_born/a_star.html"));
   });
   app.get("/show-data", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/maze_generator/maze_gem.html"));
+    res.sendFile(path.join(__dirname, "../public/maze_generator/maze_gen.html"));
   });
 
 };
