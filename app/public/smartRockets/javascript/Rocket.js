@@ -1,3 +1,4 @@
+
 class Rocket {
     constructor(lifespan) {
         this.dna = new DNA(lifespan);

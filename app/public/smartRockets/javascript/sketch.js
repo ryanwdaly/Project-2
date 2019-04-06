@@ -21,6 +21,8 @@
     var count = 0; 
     var generation = 1;
     var cnv;
+    var successGen;
+    var logged = false;
 
     var barrierx;
     var barriery;
@@ -70,7 +72,6 @@
             rect(barrierx, barriery, barrierw, barrierh);
             
             if (count == lifespan) {
-                console.log("lifespan reached")
                 generation++;
                 population.evaluate();
                 population.generateNextGen();
@@ -83,6 +84,12 @@
             for (let i = 0; i < popSize; i++) {
                 population.stack[i].update(count);
                 population.stack[i].show();
+                if (population.stack[i].completed === true && logged === false) {
+                    console.log("success!");
+                    successGen = generation;
+                    logData();
+                    logged = true;
+                }
             }
         }
     }

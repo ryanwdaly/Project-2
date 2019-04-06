@@ -8,18 +8,18 @@
 //test has 10k examples
 function loadMNIST(callback) {
     let mnist = {}
-    loadfile("mnistNN/data/t10k-images-idx3-ubyte", 16)
+    loadfile("data/t10k-images-idx3-ubyte", 16)
         .then(data => {
             mnist.testImages= data;
-            return loadfile('mnistNN/data/t10k-labels-idx1-ubyte', 8);
+            return loadfile('data/t10k-labels-idx1-ubyte', 8);
         })
         .then(data => {
             mnist.testLabels = data;
-            return loadfile('mnistNN/data/train-images-idx3-ubyte', 16);
+            return loadfile('data/train-images-idx3-ubyte', 16);
         })
         .then(data => {
             mnist.trainImages = data;
-            return loadfile('mnistNN/data/train-labels-idx1-ubyte', 8);
+            return loadfile('data/train-labels-idx1-ubyte', 8);
         })
         .then(data => {
             mnist.trainLabels = data;

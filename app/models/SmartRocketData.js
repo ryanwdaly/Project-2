@@ -8,12 +8,14 @@ var sequelize = require("../config/connection.js");
 
 // Creates a "Book" model that matches up with DB
 var SmartRocketData = sequelize.define("smart_rocket_data", {
-  input: Sequelize.STRING,
-  output: Sequelize.STRING,
+  population: Sequelize.INTEGER,
+  mutation_rate: Sequelize.INTEGER,
+  frames: Sequelize.INTEGER,
+  first_success_generation: Sequelize.INTEGER
 });
 
 // Syncs with DB
-TrainingData.sync();
+SmartRocketData.sync();
 
 // Makes the Book Model available for other files (will also create a table)
-module.exports = TrainingData;
+module.exports = SmartRocketData;

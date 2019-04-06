@@ -21,7 +21,6 @@ class DNA {
         
         for (let i = 0; i < this.genes.length; i++) {
             if (Math.random() <= mutationRate) {
-                console.log("mutation!")
                 this.genes[i] = p5.Vector.random2D();
             }
         }
