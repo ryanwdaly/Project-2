@@ -24,10 +24,10 @@ module.exports = function(app) {
   app.get("/show-data", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/show_data/show_data.html"));
   });
-  app.get("/show-data", function(req, res) {
+  app.get("/a-star", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/a_star_is_born/a_star.html"));
   });
-  app.get("/show-data", function(req, res) {
+  app.get("/maze-generator", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/maze_generator/maze_gen.html"));
   });
 
